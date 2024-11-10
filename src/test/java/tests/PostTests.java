@@ -17,8 +17,8 @@ public class PostTests extends TestBase {
     void createUserTest() {
 
         CreateUserRequestModel request = new CreateUserRequestModel();
-        request.setName("alex");
-        request.setJob("qa engineer");
+        request.setName("roma");
+        request.setJob("qa_engineer");
 
         CreateUserSuccessfulResponseModel response = step("Сделать запрос", ()->
             given()

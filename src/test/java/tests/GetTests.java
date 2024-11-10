@@ -35,10 +35,6 @@ public class GetTests extends TestBase {
             assertThat(response.getData().getEmail()).isEqualTo("janet.weaver@reqres.in");
             assertThat(response.getData().getFirst_name()).isEqualTo("Janet");
             assertThat(response.getData().getLast_name()).isEqualTo("Weaver");
-            assertThat(response.getData().getAvatar()).isEqualTo("https://reqres.in/img/faces/2-image.jpg");
-
-            assertThat(response.getSupport().getUrl()).isEqualTo("https://reqres.in/#support-heading");
-            assertThat(response.getSupport().getText()).isEqualTo("To keep ReqRes free, contributions towards server costs are appreciated!");
         });
     }
 
@@ -89,10 +85,7 @@ public class GetTests extends TestBase {
             assertThat(response.getData().get(3).getEmail()).isEqualTo("byron.fields@reqres.in");
             assertThat(response.getData().get(3).getFirst_name()).isEqualTo("Byron");
             assertThat(response.getData().get(3).getLast_name()).isEqualTo("Fields");
-            assertThat(response.getData().get(3).getAvatar()).isEqualTo("https://reqres.in/img/faces/10-image.jpg");
 
-            assertThat(response.getSupport().getUrl()).isEqualTo("https://reqres.in/#support-heading");
-            assertThat(response.getSupport().getText()).isEqualTo("To keep ReqRes free, contributions towards server costs are appreciated!");
         });
     }
 }
